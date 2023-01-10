@@ -1,0 +1,20 @@
+msk = int(input("Jam Masuk : "))
+klr = int(input("Jam Keluar : "))
+lama = klr-msk
+payment = 3500
+
+print("Durasi : " , lama , "Jam" )
+if lama <0 :
+    lama += 12
+elif lama <= 1 :
+    sj = payment
+    print("Tarif Parkir : " , sj , "Rp")
+elif lama > 1 :
+    bs = (lama-1)*2000 + payment
+    print("Tarif Parkir : ", bs, "Rp")
+
+i = 0
+hasil = 0
+nilai_akhir =  int(input('inputkan batas nilai :'))
+
+
